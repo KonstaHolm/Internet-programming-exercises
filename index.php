@@ -3,4 +3,4 @@
 	<p>
 		This is the Main Page.
 	</p>
-	<?php include "footer.php"; ?>
+<?php include "footer.php"; ?>

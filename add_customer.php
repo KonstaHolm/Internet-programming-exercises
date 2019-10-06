@@ -11,8 +11,11 @@ $stmt->bindParam(':id', $_POST['id']);
 $stmt->bindParam(':en', $_POST['en']);
 $stmt->bindParam(':sn', $_POST['sn']);
 
-$stmt->execute();
-echo 'Lisättiin asiakas: '.$_POST['id'].' '.$_POST['en'].' '.$_POST['sn'];
+if($stmt->execute())
+{
+    echo 'Lisättiin asiakas: '.$_POST['id'].' '.$_POST['en'].' '.$_POST['sn'];
+}
+echo "Lisäys epäonnistui";
 ?>
 
 

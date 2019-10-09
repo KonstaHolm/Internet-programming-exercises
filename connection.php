@@ -2,8 +2,8 @@
 	try
 	{
 	 $dsn = "mysql:host=mysli.oamk.fi;dbname=opisk_t8hoko00";
-	 $db = new PDO ($dsn, "t8hoko00", "Lehmisavu1891");
-	 //print ("Connected\n");
+	 $db = new PDO ($dsn, "t8hoko00", "1234");
+	 print ("Connected\n");
 	}
 	catch (PDOException $e)
 	{
